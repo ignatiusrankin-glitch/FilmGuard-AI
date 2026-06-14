@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FilmGuard AI</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <h1>🎬 FilmGuard AI</h1>
+
+        <p>
+            AI-Powered Website Piracy Detection Platform
+        </p>
+
+        <form method="POST">
+
+            <input
+                type="text"
+                name="url"
+                placeholder="Enter Website URL"
+            >
+
+            <button type="submit">
+                Analyze Website
+            </button>
+
+        </form>
+
+    </div>
+
+    {% if prediction %}
+
+    <div class="result">
+
+        <h2>{{ prediction }}</h2>
+
+        <h3>Risk Score: {{ risk_score }}%</h3>
+
+        <h3>Extracted Content Preview</h3>
+
+        <p>{{ extracted_text }}</p>
+
+    </div>
+
+    {% endif %}
+
+</body>
+</html>
