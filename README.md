@@ -39,6 +39,20 @@ FilmGuard-AI/
 ├── templates/
 └── static/
 
+## 📸 Screenshots
+
+### Homepage
+
+![Homepage](screenshots/homepage.png)
+
+### URL Analysis
+
+![URL Analysis](screenshots/url-analysis.png)
+
+### Detection Result
+
+![Result](screenshots/result.png)
+
 ## 🎯 Future Improvements
 
 * Larger training dataset
